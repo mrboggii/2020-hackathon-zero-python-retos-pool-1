@@ -1,13 +1,8 @@
-#!/usr/bin/python
-
-import random
 import string
+from random import *
 
-def RandomPasswordGenerator(passLen=10):
-    #
-    #
-    
-    #
-    #
+characters = string.ascii_letters + string.digits + string.punctuation
 
-    return ""
+password = "".join(choice(characters) for x in range(randint(8,16)))
+
+print(password)
